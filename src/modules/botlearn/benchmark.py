@@ -15,10 +15,14 @@ _SDK = Path("skills/botlearn/bin/botlearn.sh")
 
 
 def _find_bash() -> str:
-    """Locate a working bash — prefers MSYS/Git Bash on Windows over WSL."""
+    """Locate a working bash — prefers Git Bash on Windows over WSL."""
+    import platform
+    if platform.system() == "Windows":
+        git_bash = r"C:\Program Files\Git\bin\bash.exe"
+        if Path(git_bash).exists():
+            return git_bash
     import shutil
-    candidates = ["/usr/bin/bash", "/bin/bash", "bash"]
-    for c in candidates:
+    for c in ["/usr/bin/bash", "/bin/bash", "bash"]:
         found = shutil.which(c) or (c if Path(c).exists() else None)
         if found:
             return found

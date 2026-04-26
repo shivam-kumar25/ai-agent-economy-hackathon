@@ -1,5 +1,18 @@
 from __future__ import annotations
 
+import os
+import sys
+
+# Force UTF-8 I/O on Windows so Rich can render unicode (✓, ✗, emoji)
+if sys.platform == "win32":
+    os.environ.setdefault("PYTHONUTF8", "1")
+    if hasattr(sys.stdout, "reconfigure"):
+        try:
+            sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+            sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
 import typer
 
 from src.cli.agent import agent_app
