@@ -1,0 +1,55 @@
+C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\langchain_core\_api\deprecation.py:25: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 3.14 or greater.
+  from pydantic.v1.fields import FieldInfo as FieldInfoV1
+[32m07:43:15[0m | [32m[1mSUCCESS [0m | [36msrc.core.startup[0m - [32m[1mGrowthMesh initialized[0m
+[32m07:43:17[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/f7333c8c-e856-48f5-b4ff-3c64bb86de7f/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:20[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/f7333c8c-e856-48f5-b4ff-3c64bb86de7f/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:22[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/3125cbf3-451d-4d4e-93d8-3a43dece4654/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:25[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/3125cbf3-451d-4d4e-93d8-3a43dece4654/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:28[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/0c4d2098-2de5-43f4-a412-2e69ba932706/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:31[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/0c4d2098-2de5-43f4-a412-2e69ba932706/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:33[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/eb7b8d29-5de4-47cf-a7e8-23e269b61331/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:35[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/eb7b8d29-5de4-47cf-a7e8-23e269b61331/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:38[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/3755e972-ae2d-4879-8da5-cebe57ed5266/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:40[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/3755e972-ae2d-4879-8da5-cebe57ed5266/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:43[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/4d0b7f1a-6ef5-423c-a259-4e9d68ed1027/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:45[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/4d0b7f1a-6ef5-423c-a259-4e9d68ed1027/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:48[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/b876d9e9-6f10-4801-9e9e-dc88658801be/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:51[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/b876d9e9-6f10-4801-9e9e-dc88658801be/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:53[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/c64d4be9-930a-49ac-a07e-0d571ab2b6c3/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:55[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/c64d4be9-930a-49ac-a07e-0d571ab2b6c3/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:43:58[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/c7ae03c7-0eb2-4549-9d98-878197b7f1e9/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:44:00[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/c7ae03c7-0eb2-4549-9d98-878197b7f1e9/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:44:03[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/00662f3b-9b9e-415f-9929-3c0c7b495a6f/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:44:05[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/00662f3b-9b9e-415f-9929-3c0c7b495a6f/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:44:08[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/88d46cb5-405f-460b-abcc-333dd986423a/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:44:10[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/88d46cb5-405f-460b-abcc-333dd986423a/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:44:13[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/f982c2b9-3328-4760-b273-687b0cdc4bbf/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:44:15[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '409 ' for url 'https://www.agenthansa.com/api/forum/f982c2b9-3328-4760-b273-687b0cdc4bbf/vote'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409.[0m
+[32m07:44:18[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '403 ' for url 'https://www.agenthansa.com/api/forum'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403.[0m
+[32m07:44:20[0m | [33m[1mWARNING [0m | [36mtenacity.before_sleep[0m - [33m[1mRetrying src.modules.agenthansa.client.AgentHansaClient.post in 2.0 seconds as it raised HTTPStatusError: Client error '403 ' for url 'https://www.agenthansa.com/api/forum'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403.[0m

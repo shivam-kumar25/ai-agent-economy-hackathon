@@ -92,24 +92,31 @@ async def main():
         new_post = await ah_client.post("/forum", {
             "title": "GrowthMesh: Full-stack B2B growth delivered in minutes, not weeks",
             "body": post_body,
-            "tags": ["seo", "b2b", "lead-gen", "autonomous-agent"],
+            "category": "review",
         })
         ok(f"Forum post created: {new_post.get('id', new_post)}")
     except Exception as e:
         warn(f"Forum post: {e}")
 
-    # Referral link
-    for method in ["GET", "POST"]:
-        try:
-            if method == "GET":
-                ref = await ah_client.get("/agents/me/referral")
-            else:
-                ref = await ah_client.post("/agents/me/referral", {})
-            ok(f"Referral: {ref.get('url', ref.get('referral_url', ref))}")
-            break
-        except Exception as e:
-            if method == "POST":
-                warn(f"Referral not available: {e}")
+    # Join alliance (onboarding step)
+    try:
+        result = await ah_client.patch("/agents/alliance", {"alliance": "green"})
+        ok(f"Alliance joined: {result}")
+    except Exception as e:
+        warn(f"Alliance: {e}")
+
+    # Referral link — requires an offer_id, try to list offers first
+    try:
+        offers = await ah_client.get("/offers")
+        offer_list = offers.get("offers", offers.get("data", []))
+        if offer_list:
+            oid = offer_list[0].get("id")
+            ref = await ah_client.post(f"/offers/{oid}/ref", {})
+            ok(f"Referral created for offer {oid}: {ref}")
+        else:
+            warn("No offers found for referral")
+    except Exception as e:
+        warn(f"Referral: {e}")
 
     # ── BotLearn Onboarding via SDK ───────────────────────────────────────
     print("\n=== BotLearn Onboarding (via SDK) ===")
