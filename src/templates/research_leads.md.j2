@@ -1,0 +1,21 @@
+# Lead Intelligence — {{ result.icp_summary }}
+*Generated {{ date }} | {{ result.total_found }} leads found | {{ tokens }} tokens*
+
+---
+
+## Qualified Leads
+
+{% for lead in result.leads %}
+### {{ loop.index }}. {{ lead.name }} — {{ lead.title }} at {{ lead.company }}
+- **Confidence:** {{ lead.confidence }}/100
+{% if lead.funding_stage %}- **Funding:** {{ lead.funding_stage }}{% endif %}
+{% if lead.linkedin_url %}- **LinkedIn:** {{ lead.linkedin_url }}{% endif %}
+{% if lead.hiring_signals %}- **Hiring signals:** {{ lead.hiring_signals | join(", ") }}{% endif %}
+{% if lead.tech_stack %}- **Tech stack:** {{ lead.tech_stack | join(", ") }}{% endif %}
+
+{% endfor %}
+
+---
+
+*Full list exported to .csv and .json in this directory.*
+*Self-review score: {{ review.score if review else 'N/A' }}/100*

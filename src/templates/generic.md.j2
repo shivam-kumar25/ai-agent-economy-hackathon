@@ -1,0 +1,10 @@
+# GrowthMesh Output
+*Task: {{ input }} | Generated {{ date }} | {{ tokens }} tokens*
+
+---
+
+{{ result.content if result.content is defined else result | tojson(indent=2) }}
+
+---
+
+*Self-review score: {{ review.score if review else 'N/A' }}/100*

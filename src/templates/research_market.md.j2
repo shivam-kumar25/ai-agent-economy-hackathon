@@ -1,0 +1,50 @@
+# Market Intelligence Report
+*ICP: {{ input.icp }} | Generated {{ date }} | {{ tokens }} tokens*
+
+---
+
+## Market Size Signal
+
+{{ result.market_size_signal }}
+
+---
+
+## Top Trends
+
+{% for trend in result.top_trends %}
+### {{ trend.trend }}
+- Signal strength: **{{ trend.signal_strength | upper }}**
+- {{ trend.implication }}
+
+{% endfor %}
+
+---
+
+## Buyer Triggers
+
+{% for trigger in result.buyer_triggers %}- {{ trigger }}
+{% endfor %}
+
+---
+
+## ICP Pain Points
+
+{% for pain in result.icp_pain_points %}- {{ pain }}
+{% endfor %}
+
+---
+
+## Underserved Niches
+
+{% for niche in result.underserved_niches %}- {{ niche }}
+{% endfor %}
+
+---
+
+## Recommended Positioning
+
+**{{ result.recommended_positioning }}**
+
+---
+
+*Self-review score: {{ review.score if review else 'N/A' }}/100*

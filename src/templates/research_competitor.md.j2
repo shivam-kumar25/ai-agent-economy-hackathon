@@ -1,0 +1,49 @@
+# Competitor Analysis — {{ result.company }}
+*Generated {{ date }} | {{ tokens }} tokens*
+
+---
+
+## Positioning
+
+{{ result.positioning }}
+
+---
+
+## Pricing
+
+{% for tier in result.pricing_tiers %}
+### {{ tier.name }} — {{ tier.price }}
+{% for f in tier.key_features %}- {{ f }}
+{% endfor %}
+{% endfor %}
+
+---
+
+## Strengths
+
+{% for s in result.key_strengths %}- {{ s }}
+{% endfor %}
+
+---
+
+## Weaknesses
+
+{% for w in result.weaknesses %}- {{ w }}
+{% endfor %}
+
+---
+
+## Growth Signals
+
+{% for g in result.growth_signals %}- {{ g }}
+{% endfor %}
+
+---
+
+## Differentiation Opportunity
+
+**{{ result.differentiation_opportunity }}**
+
+---
+
+*Self-review score: {{ review.score if review else 'N/A' }}/100*

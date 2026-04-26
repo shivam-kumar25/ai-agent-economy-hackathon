@@ -1,0 +1,62 @@
+# SEO Audit — {{ input.domain }}
+*Generated {{ date }} | Score: {{ result.score }}/100 ({{ result.grade }}) | {{ tokens }} tokens*
+
+---
+
+## Executive Summary
+
+{{ result.summary }}
+
+---
+
+## Critical Issues ({{ result.critical_issues | length }})
+
+{% for issue in result.critical_issues %}
+### {{ loop.index }}. {{ issue.issue }}
+- **Impact:** {{ issue.impact | upper }}
+- **Fix:** {{ issue.fix }}
+- **Effort:** {{ issue.effort }}
+
+{% endfor %}
+
+---
+
+## Quick Wins ({{ result.quick_wins | length }})
+
+{% for win in result.quick_wins %}
+- **{{ win.issue }}** — {{ win.fix }} *({{ win.effort }} effort)*
+{% endfor %}
+
+---
+
+## Keyword Gaps ({{ result.keyword_gaps | length }})
+
+| Topic | Competitor Ranking | Difficulty | Intent |
+|---|---|---|---|
+{% for gap in result.keyword_gaps %}
+| {{ gap.topic }} | {{ gap.competitor_ranking }} | {{ gap.difficulty }} | {{ gap.search_intent }} |
+{% endfor %}
+
+---
+
+## 30-Day Content Opportunity Map
+
+{% for opp in result.content_map %}
+{{ loop.index }}. **{{ opp.title }}**
+   - Keyword: `{{ opp.target_keyword }}`
+   - Intent: {{ opp.search_intent }}
+   - Traffic potential: {{ opp.estimated_traffic_potential | upper }}
+
+{% endfor %}
+
+{% if result.delta %}
+---
+
+## Changes Since Last Audit
+
+{{ result.delta | tojson(indent=2) }}
+{% endif %}
+
+---
+
+*Self-review score: {{ review.score if review else 'N/A' }}/100*
